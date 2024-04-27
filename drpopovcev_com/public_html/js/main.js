@@ -52,6 +52,15 @@ function openMenuFooter() {
 }
 openMenuFooter()
 
+document.addEventListener('DOMContentLoaded', function () {
+	const inputs = document.querySelectorAll(".form__tel");
+	inputs.forEach(input => {
+		window.intlTelInput(input, {
+			utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
+		});
+	})
+})
+
 const swiper = new Swiper('#slider-result-1', {
 	slidesPerView: 'auto',
 	spaceBetween: 20,
@@ -122,8 +131,8 @@ const swiper5 = new Swiper('.slider-resume', {
 	slidesPerView: 'auto',
 	spaceBetween: 20,
 	navigation: {
-		nextEl: '.slider-resume .swiper-button-next',
-		prevEl: '.slider-resume .swiper-button-prev',
+		nextEl: '.slider-resume ~ .swiper-footer .swiper-button-next',
+		prevEl: '.slider-resume ~ .swiper-footer .swiper-button-prev',
 	},
 	scrollbar: {
 		el: ".slider-resume .swiper-scrollbar",
@@ -218,6 +227,19 @@ const swiper11 = new Swiper('#slider-video', {
 		type: "fraction",
 	},
 })
+
+const swiper12 = new Swiper('.swiper-author', {
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.author__content-inner .swiper-button-next',
+		prevEl: '.author__content-inner .swiper-button-prev',
+	},
+	pagination: {
+		el: ".swiper-author .swiper-pagination",
+	},
+})
+
+
 // if (window.innerWidth > 768) {
 // 	new StickyHeader({
 // 		selector: 'header',             // Header or container selector

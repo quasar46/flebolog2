@@ -16,7 +16,7 @@
 
     else{
         /*ЕСЛИ ВСЕ ПОЛЯ ЗАПОЛНЕНЫ НАЧИНАЕМ СОБИРАТЬ ДАННЫЕ ДЛЯ ОТПРАВКИ*/
-        $to = "maksim_Popovcev@mail.ru, drpopovcev@yandex.ru"; /* Адрес, куда отправляем письма*/
+        $to = "drpopovcev@gmail.com"; /* Адрес, куда отправляем письма*/
         $subject = "Запрос консультации, клиника Поповцева"; /*Тема письма*/
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";

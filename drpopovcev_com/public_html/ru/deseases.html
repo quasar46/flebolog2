@@ -6,7 +6,9 @@
   <title>Title here</title>
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/css/intlTelInput.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
   <link href="https://unpkg.com/@oveleon/sticky-header@latest/build/sticky-header.css" rel="stylesheet">
   </link>
 
@@ -19,18 +21,19 @@
         <div class="header__wrapper"><a class="logo" href="/ru"><img src="img/logo.svg" alt="логотип"></a>
           <div class="menu"> <a class="logo logo--menu" href=""><img src="img/logo.svg" alt="логотип"></a>
             <ul class="menu__list">
-              <li class="menu__item"> <a class="menu__link" href="about-doc.html">О докторе</a></li>
+              <li class="menu__item"> <a class="menu__link" href="about-doc.html">Обо мне</a></li>
               <li class="menu__item"> <a class="menu__link"><span>Пациентам</span>
                   <svg class="menu__arrow" width="13" height="8">
                     <use href="#icn-arrow-left2"></use>
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="about-doc.html">О докторе</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="about-doc.html">Обо мне</a></li>
                     <li class="submenu__item"> <a class="submenu__link" href="about.html">О клинике</a></li>
                     <li class="submenu__item"> <a class="submenu__link" href="licenses.html">Лицензии</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="answers.html">Ответы (FAQ)</a></li>
+
                     <li class="submenu__item"> <a class="submenu__link" href="results.html">Результаты лечения</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="team.html">Команда</a></li>
                   </ul>
                 </div>
               </li>
@@ -40,9 +43,9 @@
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Варикозная болезнь</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Венозный тромбоз</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Косметическая
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Варикозная болезнь</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Венозный тромбоз</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Косметическая
                         флебология</a></li>
                   </ul>
                 </div>
@@ -53,12 +56,12 @@
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Консультация с УЗИ
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Консультация с УЗИ
                         вен ног</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">ЭВЛК</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Склеротерапия</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Минифлебэктомия</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Клеевая облитерация</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">ЭВЛК</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Склеротерапия</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Минифлебэктомия</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Клеевая облитерация</a></li>
                   </ul>
                 </div>
               </li>
@@ -78,7 +81,7 @@
                 class="social__link" href=""><img src="img/YouTube.png" alt=""></a><a class="social__link" href=""><img
                   src="img/Instagram.png" alt=""></a><a class="social__link" href=""><img src="img/WhatsApp.png"
                   alt=""></a></div>
-          </div><a class="header__phone" href="tel:84950084883">8 (495) 008 48 83</a>
+          </div><a class="header__phone" href="tel:+79261973643">+7 (926) 197 36 43 <span>Личный номер врача</span></a>
           <select class="language language1" onchange="switchlang1()">
             <option value="/">RU </option>
             <option value="/en/">EN</option>
@@ -373,7 +376,7 @@
             <div class="col-right">
               <div class="col-right__head">
                 <h3>Заметный результат</h3>
-                <p>Посмотрите фотографии и видео до и сразу после процедуры.</p>
+                <p>Посмотрите фотографии и видео до и после процедуры.</p>
               </div>
             </div>
           </div>
@@ -473,8 +476,12 @@
               <h2 class="--left --italic"><span>Запишитесь </span><span>на консультацию</span></h2>
               <div class="feedback__inner">
                 <div class="feedback__text">
-                  <p> После часовой консультации у вас не останется вопросов касательно флебологических проблем.</p>
-                  <p> Доктор побеседует с вами, произведет осмотр и сделает УЗИ вен, после чего поставит диагноз.</p>
+                  <p>После часовой консультации у вас не останется вопросов
+                    касательно флебологических проблем
+                    .</p>
+                  <p> Я побеседую с вами, произведу осмотр и сделаю УЗИ вен.
+                    Поставлю диагноз и дам рекомендации по лечению
+                    .</p>
                   <p> Стоимость консультации с УЗИ вен — 3000 ₽ </p>
                 </div>
                 <form class="form feedback__form" action="sendmail.php">
@@ -558,7 +565,7 @@
             </div>
             <div class="col-right">
               <div class="slider__head">
-                <h3>5 сертификатов в разных <br> направлениях хирургии</h3>
+                <h3>Сертификаты</h3>
                 <p>Каждые 5 лет подтверждаю сертификаты, обучаясь и сдавая экзамены.</p>
               </div>
             </div>
@@ -573,24 +580,6 @@
                   </div>
                   <div class="swiper-slide"> <img src="img/pic3.png" alt="">
                     <p>Сертификат Хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic4.png" alt="">
-                    <p>Сертификат Пластическая хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic4.png" alt="">
-                    <p>Сертификат Пластическая хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic4.png" alt="">
-                    <p>Сертификат Пластическая хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic3.png" alt="">
-                    <p>Сертификат Хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic4.png" alt="">
-                    <p>Сертификат Пластическая хирургия</p>
-                  </div>
-                  <div class="swiper-slide"> <img src="img/pic4.png" alt="">
-                    <p>Сертификат Пластическая хирургия</p>
                   </div>
                   <div class="swiper-slide"> <img src="img/pic4.png" alt="">
                     <p>Сертификат Пластическая хирургия</p>
@@ -616,6 +605,21 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="_container">
+          <div class="_container-inner">
+            <div class="col-left">
+              <h2 class="title-grey">Лицензии</h2>
+            </div>
+            <div class="col-right">
+              <div class="col-right__head">
+                <h3>Лицензии</h3>
+              </div>
+              <img src="img/dha.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="author">
         <div class="_container">
           <div class="author__wrapper _container-inner">
@@ -623,15 +627,41 @@
               <h2 class="title-grey">О докторе</h2>
             </div>
             <div class="col-right">
-              <h2 class="title__author --italic"><span>Поповцев </span><span>Максим Александрович</span></h2>
-              <div class="author__content"> <img class="author__pic" src="img/Maksim_egorov.photo_7.jpg" alt="">
+              <h2 class="title__author --italic">Доктор Максим Поповцев</h2>
+              <div class="author__content">
+                <div class="author__content-inner">
+                  <div class="swiper swiper-author">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="author__pic" src="img/author/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="author__pic" src="img/author/2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="author__pic" src="img/author/3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="author__pic" src="img/author/4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="author__pic" src="img/author/5.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="swiper-navigation swiper-author-nav">
+                    <div class="swiper-button-prev">
+                      <svg width="80" height="80">
+                        <use href="#icn-arrow-prev"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg width="80" height="80">
+                        <use href="#icn-arrow-next"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
                 <div class="author__block">
-                  <h4 class="author__block-title">Врач-хирург, флеболог</h4>
+                  <h4 class="author__block-title">Хирург - Флеболог <br>
+                    кандидат медицинских наук <br>
+                    Лицензированный доктор в Дубае</h4>
                   <div class="author__block-text">
                     <p>Использую все современные малоинвазивные методы лечения варикозной болезни: различиные виды
                       склеротерапии, эндовазальную лазерную коагуляцию (ЭВЛК), радиочастотную абляцию (РЧА),
                       минифлебэктомию.</p>
-                  </div><a class="btn btn--white author__btn" href="">Подробнее о докторе</a>
+                  </div><a href="about-doc.html" class="btn btn--white author__btn" href="">Подробнее о докторе</a>
                 </div>
               </div>
             </div>
@@ -689,7 +719,7 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="about-doc.html">О докторе</a><a
+              <div class="footer__content"><a class="footer__link" href="about-doc.html">Обо мне</a><a
                   class="footer__link" href="about.html">О клинике</a><a class="footer__link"
                   href="licenses.html">Лицензии</a><a class="footer__link" href="price.html">Цены</a><a
                   class="footer__link" href="answers.html">Ответы (FAQ)</a><a class="footer__link"
@@ -705,9 +735,9 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="deseases.html">Варикозная болезнь</a><a
-                  class="footer__link" href="deseases.html">Венозный тромбоз</a><a class="footer__link"
-                  href="deseases.html">Косметическая флебология</a></div>
+              <div class="footer__content"><a class="footer__link" href="develop.html">Варикозная болезнь</a><a
+                  class="footer__link" href="develop.html">Венозный тромбоз</a><a class="footer__link"
+                  href="develop.html">Косметическая флебология</a></div>
             </div>
             <div class="footer__box ga5">
               <h5 class="footer__title">
@@ -716,10 +746,10 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="method.html">Консультация с УЗИ вен ног</a><a
-                  class="footer__link" href="method.html">ЭВЛК</a><a class="footer__link"
-                  href="method.html">Склеротерапия</a><a class="footer__link" href="method.html">Минифлебэктомия</a><a
-                  class="footer__link" href="method.html">Клеевая облитерация</a></div>
+              <div class="footer__content"><a class="footer__link" href="develop.html">Консультация с УЗИ вен ног</a><a
+                  class="footer__link" href="develop.html">ЭВЛК</a><a class="footer__link"
+                  href="develop.html">Склеротерапия</a><a class="footer__link" href="develop.html">Минифлебэктомия</a><a
+                  class="footer__link" href="develop.html">Клеевая облитерация</a></div>
             </div>
             <div class="footer__box ga3">
               <h5 class="footer__title">
@@ -774,6 +804,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/formsSubmit.js"></script>
     <script src="https://unpkg.com/@oveleon/sticky-header@latest/build/sticky-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
     <script src="js/main.js"></script>
   </div>
 </body>

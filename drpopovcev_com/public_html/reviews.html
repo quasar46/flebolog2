@@ -6,7 +6,9 @@
   <title>Title here</title>
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/css/intlTelInput.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
   <link href="https://unpkg.com/@oveleon/sticky-header@latest/build/sticky-header.css" rel="stylesheet">
   </link>
 
@@ -19,18 +21,19 @@
         <div class="header__wrapper"><a class="logo" href="/"><img src="img/logo.svg" alt="логотип"></a>
           <div class="menu"> <a class="logo logo--menu" href=""><img src="img/logo.svg" alt="логотип"></a>
             <ul class="menu__list">
-              <li class="menu__item"> <a class="menu__link" href="about-doc.html">About the doctor</a></li>
+              <li class="menu__item"> <a class="menu__link" href="about-doc.html">About me</a></li>
               <li class="menu__item"> <a class="menu__link"><span>For patients</span>
                   <svg class="menu__arrow" width="13" height="8">
                     <use href="#icn-arrow-left2"></use>
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="about-doc.html">About the doctor</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="about-doc.html">About me</a></li>
                     <li class="submenu__item"> <a class="submenu__link" href="about.html">About the clinic</a></li>
                     <li class="submenu__item"> <a class="submenu__link" href="licenses.html">Licenses</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="answers.html">Answers (FAQ)</a></li>
+
                     <li class="submenu__item"> <a class="submenu__link" href="results.html">Reviews</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="team.html">Team</a></li>
                   </ul>
                 </div>
               </li>
@@ -40,9 +43,9 @@
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Varicose veins</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Venous thrombosis</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="deseases.html">Cosmetic phlebology</a>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Varicose veins</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Venous thrombosis</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Cosmetic phlebology</a>
                     </li>
                   </ul>
                 </div>
@@ -53,12 +56,12 @@
                   </svg></a>
                 <div class="submenu">
                   <ul class="submenu__wrap">
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Consultation with ultrasound
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Consultation with ultrasound
                         of leg veins</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">EVLC</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Sclerotherapy</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Miniphlebectomy</a></li>
-                    <li class="submenu__item"> <a class="submenu__link" href="method.html">Adhesive obliteration</a>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">EVLC</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Sclerotherapy</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Miniphlebectomy</a></li>
+                    <li class="submenu__item"> <a class="submenu__link" href="develop.html">Adhesive obliteration</a>
                     </li>
                   </ul>
                 </div>
@@ -78,7 +81,7 @@
                 class="social__link" href=""><img src="img/YouTube.png" alt=""></a><a class="social__link" href=""><img
                   src="img/Instagram.png" alt=""></a><a class="social__link" href=""><img src="img/WhatsApp.png"
                   alt=""></a></div>
-          </div><a class="header__phone" href="tel:84950084883">8 (495) 008 48 83</a>
+          </div><a class="header__phone" href="tel:+79261973643">+7 (926) 197 36 43 <span>Личный номер врача</span></a>
           <select class="language language1" onchange="switchlang1()">
             <option value="/en/">EN</option>
             <option value="/">RU </option>
@@ -149,7 +152,7 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="about-doc.html">About the doctor</a><a
+              <div class="footer__content"><a class="footer__link" href="about-doc.html">About me</a><a
                   class="footer__link" href="about.html">About the clinic</a><a class="footer__link"
                   href="licenses.html">Licenses</a><a class="footer__link" href="price.html">Prices</a><a
                   class="footer__link" href="answers.html">Answers (FAQ)</a><a class="footer__link"
@@ -165,9 +168,9 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="deseases.html">Varicose veins</a><a
-                  class="footer__link" href="deseases.html">Venous thrombosis</a><a class="footer__link"
-                  href="deseases.html">Cosmetic phlebology</a></div>
+              <div class="footer__content"><a class="footer__link" href="develop.html">Varicose veins</a><a
+                  class="footer__link" href="develop.html">Venous thrombosis</a><a class="footer__link"
+                  href="develop.html">Cosmetic phlebology</a></div>
             </div>
             <div class="footer__box ga5">
               <h5 class="footer__title">
@@ -176,10 +179,10 @@
                   <use href="#icn-arrow-left"></use>
                 </svg>
               </h5>
-              <div class="footer__content"><a class="footer__link" href="method.html">Consultation with ultrasound of
-                  leg veins</a><a class="footer__link" href="method.html">EVLC</a><a class="footer__link"
-                  href="method.html">Sclerotherapy</a><a class="footer__link" href="method.html">Miniphlebectomy</a><a
-                  class="footer__link" href="method.html">Adhesive obliteration</a></div>
+              <div class="footer__content"><a class="footer__link" href="develop.html">Consultation with ultrasound of
+                  leg veins</a><a class="footer__link" href="develop.html">EVLC</a><a class="footer__link"
+                  href="develop.html">Sclerotherapy</a><a class="footer__link" href="develop.html">Miniphlebectomy</a><a
+                  class="footer__link" href="develop.html">Adhesive obliteration</a></div>
             </div>
             <div class="footer__box ga3">
               <h5 class="footer__title">
@@ -202,6 +205,7 @@
         <p class="footer__requisites">ИП «Поповцев Максим Александрович», ИНН 1123433456, ОГРНИП 2345934059</p>
       </div>
     </footer>
+
     <a href="https://api.whatsapp.com/send/?phone=%2B79261973643&text&type=phone_number&app_absent=0"
       class="widget-whatsapp" target="_blank"></a>
     <div class="vectors"><svg id="icn-arrow-feedback" viewBox="0 0 60 60" fill="none"
@@ -235,6 +239,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/formsSubmit.js"></script>
     <script src="https://unpkg.com/@oveleon/sticky-header@latest/build/sticky-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
     <script src="js/main.js"></script>
   </div>
 </body>
