@@ -1,0 +1,21 @@
+{
+  "name": "shopwhite",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "gulp sass:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "description": ""
+}
